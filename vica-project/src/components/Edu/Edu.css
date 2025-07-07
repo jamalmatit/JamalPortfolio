@@ -1,0 +1,153 @@
+.third {
+  padding-top: 110px;
+  padding-bottom: 40px;
+  .but {
+    display: flex;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    justify-content: flex-end;
+  }
+  .jj {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #0c96e2;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .pp {
+    display: flex;
+    justify-content: center;
+    color: #0c96e2;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .hh {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .jam {
+    display: flex;
+    padding: 0 70px;
+    padding-top: 90px;
+
+    justify-content: space-between;
+    .left,
+    .rightt {
+      display: flex;
+      gap: 40px;
+
+      .exp {
+        font-weight: 500;
+        font-size: 25px;
+        color: #344054;
+        padding-bottom: 14px;
+      }
+      .ppp {
+        padding-bottom: 56px;
+        max-width: 444px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .third {
+    .jam {
+      display: flex;
+      justify-content: center;
+      padding: 0 40px;
+      flex-wrap: wrap;
+      gap: 40px;
+
+      .left,
+      .rightt {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .div {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .third {
+    .pp {
+      font-size: 16px;
+    }
+    .hh {
+      font-size: 28px;
+    }
+
+    .jam {
+      padding: 0 20px;
+
+      .left,
+      .rightt {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+
+        .div {
+          max-width: 100%;
+        }
+
+        .exp {
+          font-size: 20px;
+        }
+
+        .ppp {
+          padding-bottom: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --nav-bg: #f8f9fa;
+  --link-color: #555;
+  --link-hover: #000;
+  p {
+    color: #fff;
+  }
+}
+
+/* Dark mode colors */
+.dark-mode {
+  --bg-color: #1c2633;
+  --text-color: #f8f9fa;
+  --nav-bg: #1e1e1e;
+  --link-color: #bbb;
+  --link-hover: #fff;
+  #coo {
+    color: white;
+  }
+  #cooo {
+    background-color: #1c2633;
+  }
+  p {
+    color: #fff;
+  }
+}

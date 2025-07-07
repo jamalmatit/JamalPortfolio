@@ -1,0 +1,120 @@
+/* src/components/Navbar.css */
+.navbar {
+  width: 100vw;
+  height: 70px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+.bg-1 {
+  background-color: #0c96e2;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a,
+.active li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 4px 0;
+}
+
+.navbar-links li a:hover {
+  color: #0c96e2;
+}
+
+.navbar-theme {
+  font-size: 1.3rem;
+
+  button {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar {
+    height: auto;
+    padding: 10px 20px;
+  }
+  .navbar-links {
+    gap: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .navbar {
+    height: auto;
+    padding: 10px 20px;
+  }
+  .navbar-links {
+    display: none;
+  }
+}
+
+/* Light mode colors (default) */
+
+/* Apply the variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--nav-bg);
+}
+
+.navbar-links a {
+  color: var(--link-color);
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: var(--link-hover);
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --nav-bg: #f8f9fa;
+  --link-color: #555;
+  --link-hover: #000;
+  --p {
+    color: #fff;
+  }
+}
+
+/* Dark mode colors */
+.dark-mode {
+  --bg-color: #1c2633;
+  --text-color: #f8f9fa;
+  --nav-bg: #1c2633;
+  --link-color: #bbb;
+  --link-hover: #fff;
+  --p {
+    color: #fff;
+  }
+}

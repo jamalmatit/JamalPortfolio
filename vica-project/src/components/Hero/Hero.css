@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Main Content Styles */
+.main-content {
+  padding: 80px 50px;
+}
+
+.welcome-section {
+  max-width: 600px;
+}
+
+.welcome-text {
+  font-size: 18px;
+  color: #0c96e2;
+  margin-bottom: 7px;
+}
+
+.name-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  line-height: 1.2;
+  margin-bottom: 20px;
+
+  span {
+    font-weight: 600;
+    font-size: 55px;
+    color: #1d2130;
+  }
+}
+
+.description {
+  font-size: 16px;
+  color: #1d2130;
+  line-height: 150%;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.download-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 50px 20px;
+  }
+
+  .name-title {
+    font-size: 36px;
+  }
+}
+
+.follow-me-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  transform: rotate(90deg);
+}
+.hr {
+  border: none;
+  height: 1px;
+  width: 64px;
+  color: #0c96e2;
+}
+
+.follow-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1d2130;
+}
+
+.icons-container {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --nav-bg: #f8f9fa;
+  --link-color: #555;
+  --link-hover: #000;
+  --p {
+    color: #fff;
+  }
+  .exp {
+    color: white;
+  }
+}

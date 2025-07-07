@@ -1,0 +1,103 @@
+.out {
+  display: flex;
+  background-image: url(./../../assets/img/tt.png);
+  background-repeat: no-repeat;
+  max-width: 1182px;
+  height: 375px;
+  margin-left: 90px;
+  margin-right: 90px;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+  .risk {
+    padding-right: 138px;
+    padding-left: 138px;
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      color: #ffffff;
+    }
+  }
+  .con {
+    button {
+      width: 155px;
+      height: 50px;
+      border: none;
+      border-radius: 6px;
+      background-color: #0c96e2;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .out {
+    flex-direction: column;
+    max-width: 90%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .risk {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .con {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    button {
+      width: 130px;
+      height: 45px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .out {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+  .risk {
+    h1 {
+      font-size: 28px;
+      padding: 0 30px;
+      width: 150px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .con {
+    button {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+}
